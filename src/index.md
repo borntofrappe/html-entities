@@ -131,7 +131,6 @@ layout: 'layouts/base.njk'
 | \&euro;   | &euro;   | Euro sign                   |
 | \&plusmn; | &plusmn; | plus-or-minus sign          |
 | \&micro;  | &micro;  | micro symbol (mu)           |
-| \&middot; | &middot; | middle dot character        |
 | \&deg;    | &deg;    | degree sign                 |
 | \&sup1;   | &sup1;   | superscript one             |
 | \&sup2;   | &sup2;   | superscript two (squared)   |
