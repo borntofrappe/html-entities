@@ -1,6 +1,7 @@
 ---
 title: 'HTML Entities'
 description: 'A handy reference for HTML entities'
+layout: 'layouts/base.njk'
 ---
 
 | &code      | symbol       | description                 |
