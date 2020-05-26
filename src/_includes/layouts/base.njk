@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <style>
+    {% include "css/global.css" %}
     {% include "css/base.css" %}
     </style>
 </head>
 <body>
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
+    <a class="visually-hidden" id="skip-to-content" href="#content">Skip to content</a>
+    <header>
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+    </header>
 
-    {{content | safe }}
+    <main id="content">
+        {{content | safe }}
+    </main>
+
+    <footer>
+        <p>Inspired by <a href="https://www.freecodecamp.org/news/html-entities-symbols-special-character-codes-list/">HTML Entities</a>, an insightful article from <a href="https://twitter.com/ossia">Quincy Larson</a>.</p>
+        <p>Build with 11ty, much love, and several backslash characters.</p>
+    </footer>
     
 </body>
 </html>
