@@ -1,0 +1,27 @@
+{
+  "name": "html-entities",
+  "version": "1.0.0",
+  "description": "A handy reference for HTML entities",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borntofrappe/html-entities.git"
+  },
+  "keywords": [
+    "html",
+    "html entities"
+  ],
+  "author": "borntofrappe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/borntofrappe/html-entities/issues"
+  },
+  "homepage": "https://github.com/borntofrappe/html-entities#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
