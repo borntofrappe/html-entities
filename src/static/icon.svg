@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+  <style>
+  @media (prefers-color-scheme: dark) {
+    g {
+      stroke: hsl(170, 60%, 60%);
+    }
+  }
+  </style>
+  <g fill="none" stroke="hsl(240, 10%, 10%)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 35 42.5 q -55 -35 -55 -67.5 a 20 20 0 0 1 40 0" />
+    <path d="M -17.5 -2.5 a 25 25 0 0 0 0 45.5 35 35 0 0 0 45 -45" stroke-dasharray="120"/>
+  </g>
+</svg>
