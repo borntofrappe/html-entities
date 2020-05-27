@@ -1,7 +1,7 @@
 ---
 title: 'HTML Entities'
 description: 'A handy reference for special characters.'
-layout: 'layouts/base.njk'
+layout: 'layouts/index.njk'
 ---
 
 | &code     | symbol   | description                 |

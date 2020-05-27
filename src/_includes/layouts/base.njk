@@ -27,36 +27,14 @@
     <style>
     {% include "css/global.css" %}
     {% include "css/base.css" %}
+    {%- block style %}
+    {% endblock %}
     </style>
 </head>
 <body>
-    <a class="visually-hidden" id="skip-to-content" href="#content">Skip to content</a>
-    <header>
-        <h1>{{title}}</h1>
-        <p>{{description}}</p>
-    </header>
 
-    <main id="content">
-        {{content | safe }}
-
-        <a href="https://github.com/borntofrappe/html-entities/blob/master/{{ page.inputPath }}">
-            Edit on GitHub
-            <svg aria-hidden="true" aria-focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100" width="1em" height="1em">
-                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                    <g stroke-width="8">
-                    <path d="M 16.5 -44 h -52.5 a 10 10 0 0 0 -10 10 v 68 a 10 10 0 0 0 10 10 h 54 a 10 10 0 0 0 10 -10 v -17.5"/>
-                    <path d="M 29 -37.5 l 17 17 -38 38 h -17 v -17 l 38 -38"/>
-                    </g>
-                    <g stroke-width="7">
-                    <path d="M 20 -28.5 l 17 17"/>
-                    <path d="M -30 -22 h 25"/>
-                    <path d="M -30 -2 h 10"/>
-                    <path d="M -30 18 h 10"/>
-                    </g>
-                </g>
-            </svg> 
-        </a>
-    </main>
+    {%- block content %}
+    {% endblock %}
 
     <footer>
         <p>Inspired by <a href="https://www.freecodecamp.org/news/html-entities-symbols-special-character-codes-list/">HTML Entities</a>, an insightful article from <a href="https://twitter.com/ossia">Quincy Larson</a>.</p>
