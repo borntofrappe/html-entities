@@ -30,4 +30,4 @@ A handy reference for special characters, inspired by [this article](https://www
 npm run build
 ```
 
-This instruction requires `puppeteer`. It runs `eleventy`, produces he necessary page(s), and then `puppeteer` to create the `.png` image for the list of entities.
+This instruction requires `puppeteer`. It runs `eleventy`, produces he necessary page(s), and then `puppeteer` to create the `.png` images for the list of entities and the twitter card.
