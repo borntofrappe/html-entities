@@ -9,7 +9,7 @@ const outputCard = 'dist/static/twitter-card.png';
 
 if (fs.existsSync(inputFile)) {
   console.log(`Launching **puppeteer** for '${inputFile}'`);
-  const headless = false;
+  const headless = true;
   (async () => {
     const browser = await puppeteer.launch({ headless });
     const page = await browser.newPage();
