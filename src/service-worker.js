@@ -6,10 +6,5 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('fetch', e => {
-  e.respondWith(
-    caches.match(e.request).then(response => {
-        console.log(response);
-        return response || fetch(e.request);
-    })
-  );
+  e.respondWith(caches.match(e.request).then(response => response || fetch(e.request)));
 });
