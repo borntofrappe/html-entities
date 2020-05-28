@@ -1,16 +1,19 @@
 {
+  "short_name": "HTML Entities",
   "name": "HTML Entities",
   "description": "A handy reference for special characters.",
   "icons": [
     {
       "src": "/static/icon-192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "/static/icon-512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": "/",
