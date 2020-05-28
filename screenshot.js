@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer');
-const path = require('path');
 const fs = require('fs');
 
 // consider the file produced by 11ty in the dist folder
@@ -9,12 +8,13 @@ const outputCard = 'dist/static/twitter-card.png';
 
 if (fs.existsSync(inputFile)) {
   console.log(`Launching **puppeteer** for '${inputFile}'`);
+  const html = fs.readFileSync(inputFile, { encoding: 'utf-8'});
   const headless = true;
   (async () => {
     const browser = await puppeteer.launch({ headless });
     const page = await browser.newPage();
 
-    await page.goto(path.resolve(inputFile), { waitUntil: 'networkidle0' });
+    await page.setContent(html, { waitUntil: 'networkidle0' });
 
     const main = await page.$('main');
     const { x, y, width, height } = await main.boundingBox();
