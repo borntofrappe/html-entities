@@ -1,0 +1,20 @@
+{
+  "name": "HTML Entities",
+  "description": "A handy reference for special characters.",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "hsl(0, 0%, 99%)",
+  "display": "standalone",
+  "theme_color": "hsl(240, 10%, 10%)"
+}
