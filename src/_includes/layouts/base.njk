@@ -43,5 +43,13 @@
         <p>Built with <a href="https://www.11ty.dev/">11ty</a>, much love, and several backslash characters.</p>
     </footer>
 
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            })
+        }
+    </script>
+
 </body>
 </html>
