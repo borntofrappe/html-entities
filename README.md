@@ -10,16 +10,24 @@ A handy reference for special characters, inspired by [this article](https://www
    npm install
    ```
 
+   It might take a while to install the packages necessary to run `puppeteer`. If you don't care about the specific script, feel free to remove the dependency.
+
+   ```diff
+   -"dependencies": {
+   - "puppeteer": "^3.1.0"
+   -}
+   ```
+
 2. run on localhost/8080
 
    ```bash
    npm run serve
    ```
 
-## Roadmap
+## Build
 
-- [x] add link to edit the table on GitHub
+```bash
+npm run build
+```
 
-- [ ] add a form to search in the table
-
-- [ ] create a .png image for the codes, add a link to download the static file
+This instruction requires `puppeteer`. It runs `eleventy`, produces he necessary page(s), and then `puppeteer` to create the `.png` image for the list of entities.
