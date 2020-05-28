@@ -1,5 +1,6 @@
 module.exports = {
-    url: 'http://html-entities-list.netlify.app/',
+    name: 'HTML Entities',
+    url: 'http://html-entities-list.netlify.app',
     author: {
         name: 'Gabriele Corti',
         handle: 'borntofrappe',

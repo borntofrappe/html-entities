@@ -15,14 +15,18 @@
     <meta name="description" content="{{description}}" />
     <meta property="og:title" content="{{title}}" />
     <meta property="og:description" content="{{description}}" />
-    
-    <meta property="og:image" content="static/twitter-card.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{site.name}}" />
+    <meta property="og:image" content="{{site.url}}/static/twitter-card.png" />
     <meta property="og:image:alt" content="Table describing the codes for HTML entities." />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{title}}" />
     <meta name="twitter:description" content="{{description}}" />
-    <meta name="twitter:image" content="static/twitter-card.png" />
+    <meta property="twitter:site" content="{{site.author.handle}}" />
+    <meta property="twitter:creator" content="{{site.author.handle}}" />
+    <meta name="twitter:image" content="{{site.url}}/static/twitter-card.png" />
     <meta name="twitter:image:alt" content="Table describing the codes for HTML entities." />
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
